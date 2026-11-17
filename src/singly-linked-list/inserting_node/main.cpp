@@ -29,7 +29,7 @@ switch(choice){
     cin.get(p->name,30);
     cout<<"Enter the age of the student: ";
     cin>>p->age;
-    cout<<"Enter the GPA of the student";
+    cout<<"Enter the GPA of the student: ";
     cin>>p->gpa;
     insert_beg(p);
     }
@@ -41,7 +41,7 @@ switch(choice){
     cin.get(p->name,30);
     cout<<"Enter the age of the student: ";
     cin>>p->age;
-    cout<<"Enter the GPA of the student";
+    cout<<"Enter the GPA of the student: ";
     cin>>p->gpa;
     insert_end(p);
     }
@@ -123,6 +123,7 @@ void print_nodes(){
     cout<<"List is empty.Try inserting nodes!";
     return;
   }
+   cout<<"----------------------\n";
    cout<<"Name: "<<temp->name<<"\n"; //print the first node before temp starts moving
    cout<<"AGE: "<<temp->age<<"\n";
    cout<<"GPA: "<<temp->gpa<<"\n";
